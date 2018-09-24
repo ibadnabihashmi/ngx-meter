@@ -3,7 +3,15 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <ngx-meter [height]="height" [width]="width" [score]="score" [colors]="colors"></ngx-meter>
+  <ngx-meter
+    [height]="height"
+    [width]="width"
+    [score]="score"
+    [colors]="colors"
+    [gradient]="gradient"
+    [innerRadius]="innerRadius"
+    [radialGradiant]="radialGradiant">
+  </ngx-meter>
   <button (click)="changeScore()">change</button>
   <h1>{{score}}</h1>
 </div>
